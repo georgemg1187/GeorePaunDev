@@ -31,17 +31,31 @@ header {
     background-color: var(--primary-color);
 }
 
-.container-L {
+.container-l {
     max-width: 1280px;
     width: 100%;
     margin: auto;
     padding: 0px 20px;
 }
 
+
 /* ------------------------
 MENU
 --------------------------*/
-nav .container-L {
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+}
+
+nav .container-l {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,10 +99,43 @@ nav .container-L {
     content: "";
     width: 0px;
     height: 3px;
+    position: relative;
+    left: 50%;
     background-color: var(--fourth-color);
     transition: all 0.15s ease-in;
 }
 
 #top-menu a:hover:after {
     width: 100%;
+    left: 0%;
+}
+
+/* ------------------------
+MENU
+--------------------------*/
+
+#parallax {
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    background: url(images/background.jpg) center fixed no-repeat;
+    background-size: cover;
+}
+
+.fade {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+#site-name {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
 }
