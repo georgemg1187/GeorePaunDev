@@ -65,6 +65,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 
 nav {
@@ -196,10 +197,44 @@ Profile
     align-items: flex-start;
     justify-content: space-between;
     border-top: 1px solid var(--third-color);
-    width: 1110px;
-    margin: auto
+    width: 100%;
+    margin: auto;
+    line-height: 1.5;
 }
 
 .about-boxes {
-    max-width: 320px;
+   width: 32%;
+}
+
+.about-boxes:nth-of-type(2) {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-boxes h3 {
+    text-align: center;
+}
+
+#image-wrapper {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    margin: 35px 0;
+}
+
+#image-wrapper img {
+    width: 100%;
+}
+
+.details {
+    font-weight: bold;
+    color: var(---fourth-color);
+}
+
+.about-boxes ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
