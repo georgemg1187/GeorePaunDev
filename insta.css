@@ -1,0 +1,36 @@
+
+#instafeed-wrapper {
+    width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    background: url(images/instabg.jpg) center fixed no-repeat;
+    background-size: cover;
+}
+
+#instafeed-wrapper .fade {
+    padding: 35px 0;
+}
+
+#instafeed-wrapper p , #instafeed-wrapper h2 {
+    color: var(--primary-color);
+}
+
+#instafeed-wrapper p {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#instafeed {
+    margin: 85px 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+    height: 220px;
+}
+
+.insta-image {
+	display: inline-block;
+    width: 200px;
+    border: 10px solid white;
+    border-radius: 5px;
+}
