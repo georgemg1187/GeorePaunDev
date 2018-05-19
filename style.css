@@ -148,7 +148,7 @@ Parallax
     height: 100%;
 }
 
-.fade .container-l {
+#parallax .fade .container-l {
     height: 100%;
 }
 
@@ -178,25 +178,29 @@ Profile
 --------------------------*/
 #about {
     font-family: "Open sans regular";
+    margin: 35px 0;
 }
 
-#about h2 {
+.section-title h2 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin: 50px 0 15px 0;
+    margin: 15px 0 15px 0;
 }
 
-#about .container-l > p {
+.section-title .container-l > p {
     text-align: center;
+    margin: 0px;
+    padding: 5px 0 10px 0;
     color: var(--third-color);
+    border-bottom: 1px solid var(--third-color);
 }
 
 .about-wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    border-top: 1px solid var(--third-color);
+    /* border-top: 1px solid var(--third-color); */
     width: 100%;
     margin: auto;
     line-height: 1.5;

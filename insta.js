@@ -173,6 +173,7 @@ var feed = new Instafeed({
     // tagName: 'cartagena',
     userId: "2044090326",
     resolution: 'standard_resolution',
-    accessToken: '2044090326.e31f814.a75d5fd3587440c4a67a01ba81ebcfc3'
+    accessToken: '2044090326.e31f814.a75d5fd3587440c4a67a01ba81ebcfc3',
+    template: '<img class="insta-image" src="{{image}}" />'
 });
 feed.run();
