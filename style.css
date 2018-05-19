@@ -156,7 +156,7 @@ Parallax
     position: relative;
     top: 50%;
     display: inline-block;
-    font-family: "roboto light";
+    font-family: 'Open sans regular';
     transform: translateY(-50%);
     letter-spacing: 3.5px;
 }
