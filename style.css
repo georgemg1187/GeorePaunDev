@@ -18,6 +18,11 @@
     src: url(fonts/OpenSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Satisfy';
+    src: url(fonts/Satisfy-Regular.ttf);
+}
+
 
 :root {
     --primary-color: #E8F7EE;
@@ -48,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--third-color);
 }
 
-h1 {font-size: 3rem}
+h1 {font-size: 3.5rem}
 h2 {font-size: 2.5rem}
 h3 {font-size: 2rem}
 h4 {font-size: 1.6rem}
@@ -138,12 +143,13 @@ Parallax
     -webkit-user-select: none;
     -moz-user-select: none;
     -moz-user-select: none;
-    background: url(images/background.jpg) center fixed no-repeat;
+    background: url(images/mainbg.jpg) center fixed no-repeat;
     background-size: cover;
 }
 
 .fade {
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background: linear-gradient(rgba(38, 18, 68, 0.75) 0%, rgba(108, 13, 76, 0.75) 100%);
     width: 100%;
     height: 100%;
 }
@@ -155,10 +161,12 @@ Parallax
 #site-name {
     position: relative;
     top: 50%;
+    left: 50%;
     display: inline-block;
     font-family: 'Open sans regular';
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     letter-spacing: 3.5px;
+    text-align: center;
 }
 
 #site-name h1 {
@@ -166,11 +174,16 @@ Parallax
     text-transform: uppercase;
     border-bottom: 1px solid white;
     display: inline;
+    font-weight: 700;
 }
 
 #site-name p {
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+#site-name p:nth-of-type(2) {
+    font-family: Satisfy;
 }
 
 /* ------------------------
@@ -193,38 +206,33 @@ Profile
     margin: 0px;
     padding: 5px 0 10px 0;
     color: var(--third-color);
+}
+
+.underline {
     border-bottom: 1px solid var(--third-color);
+    width: 200px;
+    margin: auto;
+    padding-top: 20px;
 }
 
 .about-wrapper {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    /* border-top: 1px solid var(--third-color); */
-    width: 100%;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
     line-height: 1.5;
 }
 
-.about-boxes {
-   width: 32%;
-}
-
 .about-boxes:nth-of-type(2) {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.about-boxes h3 {
+    width: 70%;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 #image-wrapper {
     overflow: hidden;
     border-radius: 50%;
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     margin: 35px 0;
 }
 
@@ -247,7 +255,7 @@ Profile
 Expericens
 --------------------------*/
 
-#experiences {
+/* #experiences {
     padding: 35px 0px;
 }
 
@@ -290,14 +298,14 @@ Expericens
 
 .profile {
     margin-top: 0;
-}
+} */
 
 /* ------------------------
 Abilities
 --------------------------*/
 
 #abilities {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     padding: 35px 0;
 }
 
@@ -317,6 +325,7 @@ Abilities
     margin: 0 32px;
 }
 
-.romb p {
+.romb img {
     transform: rotate(-45deg);
+    width: 50%;
 }
