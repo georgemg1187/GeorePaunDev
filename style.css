@@ -242,3 +242,81 @@ Profile
     padding: 0;
     list-style: none;
 }
+
+/* ------------------------
+Expericens
+--------------------------*/
+
+#experiences {
+    padding: 35px 0px;
+}
+
+.exp-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.exp-left, .exp-right {
+    width: 50%;
+}
+
+.exp-left {
+    display: flex;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.exp-left > div {
+    width: 50%;
+}
+
+.name, city, profile {
+    color: var(--third-color)
+}
+
+.name {
+    font-size: 26px;
+}
+
+.year {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.city, .profile {
+    font-size: 22px;
+}
+
+.profile {
+    margin-top: 0;
+}
+
+/* ------------------------
+Abilities
+--------------------------*/
+
+#abilities {
+    background-color: var(--primary-color);
+    padding: 35px 0;
+}
+
+.ab-container {
+    padding: 50px 0;
+}
+
+.romb {
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    border: 4px solid black;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 32px;
+}
+
+.romb p {
+    transform: rotate(-45deg);
+}
